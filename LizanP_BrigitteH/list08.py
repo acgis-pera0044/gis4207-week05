@@ -19,11 +19,11 @@ def main():
     if not os.path.exists(root_folder):
         print(f"{root_folder} does not exist")
         sys.exit()
-    elif feature_type in valid_feature_types:
+    elif feature_type not in valid_feature_types:
+        print(f"{feature_type} does not exist")
+    else:
         import arcpy
         show_feature_classes(root_folder, feature_type, out_file_name)
-    else:
-        print(f"{feature_type} does not exist")
     
 
 def show_feature_classes(root_folder, feature_type, out_file_name):
