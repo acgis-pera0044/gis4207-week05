@@ -3,7 +3,7 @@ import sys
 
 def main():
     if len(sys.argv) !=2:
-        print('Usage:  describe03.py <FeatureClassName>')
+        print('Usage: describe03.py <FeatureClassName>')
         sys.exit()
     
     fc = sys.argv[1]

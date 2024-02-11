@@ -4,7 +4,7 @@ def main():
     global arcpy
 
     if len(sys.argv) !=2:
-        print('Usage:  describe05.py <FeatureClassName>')
+        print('Usage: describe05.py <FeatureClassName>')
         sys.exit()
 
     fc = sys.argv[1]
