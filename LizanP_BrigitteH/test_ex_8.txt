@@ -1,8 +1,0 @@
-Point feature classes in and below ..\..\..\..\data\SanFrancisco
-..\..\..\..\data\SanFrancisco\agencies.shp
-..\..\..\..\data\SanFrancisco\artgalleries.shp
-..\..\..\..\data\SanFrancisco\customers.shp
-..\..\..\..\data\SanFrancisco\museums.shp
-..\..\..\..\data\SanFrancisco\pizza.shp
-..\..\..\..\data\SanFrancisco\stores.shp
-..\..\..\..\data\SanFrancisco\theatre.shp

@@ -28,7 +28,7 @@ def show_workspaces_and_feature_classes(root_folder):
         for workspace in workspaces:
             print(os.path.abspath(workspace))
         for feature in feature_classes:
-            list_feature_classes.append(os.path.abspath(feature))
+            list_feature_classes.append(os.path.join(os.path.abspath(dirpath), feature))
     print(list_feature_classes)
 
 if __name__ == '__main__':
