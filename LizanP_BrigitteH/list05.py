@@ -4,10 +4,9 @@ import os
 def main():
 
     if len(sys.argv) !=2:
-        print('Usage:  list05.py <root_folder>')
+        print('Usage: list05.py <root_folder>')
         sys.exit()
     
-
     root_folder = sys.argv[1]
 
     if not os.path.exists(root_folder):
@@ -15,7 +14,6 @@ def main():
         sys.exit()
     
     show_folders(root_folder)
-
 
 def show_folders(root_folder):
     for dirPath, dirNames, fileNames in os.walk(root_folder):
