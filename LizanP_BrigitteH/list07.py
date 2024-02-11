@@ -20,6 +20,7 @@ def main():
 
 
 def show_workspaces_and_feature_classes(root_folder):
+    list_feature_classes = []
     for dirpath, dirnames, filenames in os.walk(root_folder, topdown = True):
         arcpy.env.workspace = dirpath
         workspaces = arcpy.ListWorkspaces("*")
@@ -27,7 +28,8 @@ def show_workspaces_and_feature_classes(root_folder):
         for workspace in workspaces:
             print(os.path.abspath(workspace))
         for feature in feature_classes:
-            print(os.path.abspath(feature))
+            list_feature_classes.append(os.path.abspath(feature))
+    print(list_feature_classes)
 
 if __name__ == '__main__':
     main()
