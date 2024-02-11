@@ -20,7 +20,7 @@ def main():
 
 
 def show_workspace_paths(root_folder):
-    for dirpath, dirnames, filenames in os.walk(root_folder, topdown=True):
+    for dirpath, dirnames, filenames in os.walk(root_folder, topdown = True):
         arcpy.env.workspace = dirpath
         workspaces = arcpy.ListWorkspaces("*")
         for workspace in workspaces:
