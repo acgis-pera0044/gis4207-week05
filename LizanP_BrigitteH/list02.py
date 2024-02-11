@@ -4,13 +4,13 @@ def main():
     global arcpy
 
     if len(sys.argv) !=2:
-        print('Usage:  list02.py <Workspace>')
+        print('Usage: list02.py <Workspace>')
         sys.exit()
-    
-    import arcpy
 
     arcpy.env.workspace = sys.argv[1]
     workspace = arcpy.env.workspace
+
+    import arcpy
 
     if not arcpy.Exists(workspace):
         print(f"{workspace} does not exist")
