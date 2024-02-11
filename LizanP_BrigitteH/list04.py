@@ -4,7 +4,7 @@ def main():
     global arcpy
 
     if len(sys.argv) !=2:
-        print('Usage:  list04.py root_folder')
+        print('Usage: list04.py <root_folder>')
         sys.exit()
     
     import arcpy
@@ -12,7 +12,7 @@ def main():
     root_folder = sys.argv[1]
 
     if not arcpy.Exists(root_folder):
-        print(f"{root_folder} does not exist")
+        print(f"{root_folder} does not exist.")
         sys.exit()
     
     show_workspaces(root_folder)
